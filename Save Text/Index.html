@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Editor </title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="bg.jpg" type="image/icon type">
+    <script defer src="script.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+
+    <div class="over-All-Div">
+        <div class="border-area">
+        <div class="text-area">
+            <textarea class="comment">Please Enter Here.</textarea>
+            <br>
+        </div>
+        <div class="file-name-box">
+         <!-- <label>File Name</label> -->
+         <div class="text-input field">
+            <input type="text" name="tlseat" id="textnote" >
+            <label for="input1">File Name</label>
+          </div>
+        </div>
+        <div class="Save-as">
+            <div class='SelectBox'>
+                <select>
+                    <option  value="text/plain">Text File(.txt)</option>
+                    <option  value="text/javascript">JS File(.js)</option>
+                    <option  value="text/html">HTML File(.html)</option>
+                    <option  value="text/svg+xml">SVG File(.svg)</option>
+                    <option  value="text/application/msword">DOC File(.doc)</option>
+                    <option  value="text/vnd.ms-powerpoint">PPT File(.ppt)</option>
+                </select>
+                <div class="chevron">
+                      <i class="far fa-chevron-circle-down"></i>
+                  </div>
+            </div>
+        </div>
+        <button class="save-btn" role="button" id="SaveBtn">Save As</button>
+        </div>
+    </div>
+    <button>Save</button>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+.over-All-Div{
+    /* background-image: url('image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    background-color: #F2CAC8;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.text-area{
+    position: absolute;
+    top:100px;
+   left:20px;
+   right:20px
+}
+.comment {
+    resize: none;
+    position: absolute;
+    top: -73px;
+    left: 45px;
+    height: 369px;
+    width: 500px;
+  }
+.border-area{
+    border-radius: 20px;
+    width: 619px;
+    height: 550px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/poster.png);
+    background-position: center;
+    margin-left: 100px;
+    padding: 0px;
+    border: 2px solid rgb(182, 144, 144);
+    float: center;
+    position: absolute;
+    top: 52px;
+    left: 167px;
+    right: 10px;
+    box-shadow: 0px 5px 10px 0px rgb(238 231 231 / 50%);
+  }
+.file-name-box{
+    position: absolute;
+    top: 408px;
+    left: 15px;
+    right: 10px;
+  }
+  .Save-as{
+    position: absolute;
+    top: 429px;
+    left: 440px;
+    right: 10px;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Montserrat;
+  background: #313e50;
+}
+
+.text-input {
+  position: relative;
+  margin-top: 50px;
+}
+.text-input input[type=text] {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 10px 10px 10px 100px;
+  transition: all 0.1s ease-out;
+}
+.text-input input[type=text] + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  border-radius: 3px 0 0 3px;
+  padding: 0 20px;
+  background: #e03616;
+  transform: translateZ(0) translateX(0);
+  transition: all 0.3s ease-in;
+  transition-delay: 0.2s;
+}
+.text-input input[type=text]:focus + label {
+  transform: translateY(-120%) translateX(0%);
+  border-radius: 3px;
+  transition: all 0.1s ease-out;
+}
+.text-input input[type=text]:focus {
+  padding: 10px;
+  transition: all 0.3s ease-out;
+  transition-delay: 0.2s;
+}
+
+
+.SelectBox {
+    position: relative;
+  }
+  .SelectBox select {
+    width: 300px;
+    position: absolute;
+    top: 30px;
+    left: -123px;
+    height: 35px;
+    background-color: #26de81;
+    color: #fff;
+    -webkit-appearance: none;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .SelectBox .chevron {
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    text-align: center;
+    line-height: 35px;
+    width: 30px;
+    height: 100%;
+    background-color: #27ae60;
+    pointer-events: none;
+    color: #fff;
+  }
+  .SelectBox select option {
+    background-color: #27ae60;
+  }
+
+
+
+/* CSS */
+.save-btn {
+    background-color: #0078d0;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+    font-weight: 619;
+    outline: 0;
+    padding: 16px 21px;
+    position: absolute;
+    top: 499px;
+    left: 214px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.save-btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.save-btn:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .save-btn {
+    padding: 16px 48px;
+  }
+}
+  
+  
